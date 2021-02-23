@@ -21,14 +21,14 @@
   <p align="center" style="padding: 10px">
     <img src="https://github.com/terminate9298/Rasa-Submission/raw/main/Screenshot_20210224-014815_WhatsApp.jpg" alt="Whatsapp Chat Histroy - 1"  width="320">
     <br>
-    <em style="color: grey">Forwarding (Anahtarlama)</em>
+    <em style="color: grey">Whatsapp Chat Histroy - 1</em>
   </p> 
 </td>
 <td> 
   <p align="center">
     <img  src="https://github.com/terminate9298/Rasa-Submission/raw/main/Screenshot_20210224-014809_WhatsApp.jpg" alt="Whatsapp Chat Histroy - 2"  width="320">
     <br>
-    <em style="color: grey">Routing (yönlendirme)</em>
+    <em style="color: grey">Whatsapp Chat Histroy - 2</em>
   </p> 
 </td>
 </tr>
