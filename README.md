@@ -15,5 +15,6 @@
 
 ## Whatapp Chat Implementation
 #
-![Whatsapp Chat Histroy - 1](https://github.com/terminate9298/Rasa-Submission/raw/main/Screenshot_20210224-014815_WhatsApp.jpg "Whatsapp Chat Histroy - 1").
-![Whatsapp Chat Histroy - 2](https://github.com/terminate9298/Rasa-Submission/raw/main/Screenshot_20210224-014809_WhatsApp.jpg "Whatsapp Chat Histroy - 2").
+Chat-1 | Chat-2
+- | - 
+![Whatsapp Chat Histroy - 1](https://github.com/terminate9298/Rasa-Submission/raw/main/Screenshot_20210224-014815_WhatsApp.jpg "Whatsapp Chat Histroy - 1"). | !![Whatsapp Chat Histroy - 2](https://github.com/terminate9298/Rasa-Submission/raw/main/Screenshot_20210224-014809_WhatsApp.jpg "Whatsapp Chat Histroy - 2").
