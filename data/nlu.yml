@@ -101,12 +101,12 @@ nlu:
 
 - intent: my_name
   examples: |
-    - my name is [ashish]{"entity":"name","value":"ashish"}
+    - my name is [Kaus]{"entity":"name","value":"Kaus"}
     - my name is [rahul]{"entity":"name","value":"rahul"}
     - my name is [apneet]{"entity":"name","value":"apneet"}
     - [ashish]{"entity":"name","value":"ashish"} is my name
     - [ashish]{"entity":"name","value":"ashish"} this side
-    - people call me [ashish]{"entity":"name","value":"ashish"}
+    - people call me [pathak]{"entity":"name","value":"pathak"}
 
 - intent: mobile_number
   examples: |
