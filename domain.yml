@@ -10,7 +10,7 @@ intents:
   - bot_challenge
   - tell_name
   - out_of_scope
-  - chitchat
+  - faq
   - my_name:
       use_entities:
         - name
@@ -37,48 +37,80 @@ slots:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Hey! How are you?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "In 100 Years, No one will care... So Cheer Up"
+    - text: "You know i dont even have body. You are lucky to be human."
 
   utter_did_that_help:
-  - text: "Did that help you?"
+    - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Great, carry on!"
+    - text: "Why? Dont you know polar caps are Melting?"
+    - text: "Why? Dont you know you described your Feelings to Bot."
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Bye"
+    - text: "Miss You Bye."
+    - text: "Come Back Soon."
+    - text: 'Happy Talking to You'
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am a bot, powered by Rasa."
   
   utter_name:
-  - text: My name is Innovate Yourself.
+    - text: "Great Lets Start with Basic details."
 
   utter_ask_name:
-  - text: What is your name?
+    - text: What is your Name?
+    - text: Tell me your name.
+    - text: We will start with name.\n Whats your name.
 
   utter_ask_number:
-  - text: What is your mobile number?
+    - text: What is your Mobile Number?
+    - text: Where can i call you.
 
   utter_ask_mail:
-  - text: What is your E Mail?
+    - text: What is your E Mail?
+    - text: Tell me your Mail ID. We wont Spam you.
 
   utter_thanks:
     - text: Thanks for providing the values.
+    - text: Thanks for Sticking to the end. Bye
 
   utter_details_thanks:
-    - text: "Thanks for providing the given details \nName: {Name},\nMobile Number: {Mobile_number},\nE Mail: {E_Mail}"
+    - text: "Thanks for providing the given details \nName: {Name},\nMobile Number: {Mobile_number},\nE Mail: {E_Mail},\nStatus: {If_Inserted}"
 
   utter_out_of_scope:
     - text: Sorry, I didn't get what you said. Please rephrase what you said.
 
-  utter_chitchat/ask_me:
+  utter_faq/ask_me:
     - text: "I can do these many things for you."
+    - text: "I am just basic Bot. Dont ask me such Compicated Question"
 
+  utter_faq/ask_weather:
+    - text: "Amazing! You should go outside more often"
+    - text: "Its Good. What to go outside"
+
+  utter_faq/ask_number:
+    - text: "You can call me at +91-9369074949. We Open from 0900 to 1700."
+    - text: "Call me. +91-9369074949"
+  
+  utter_faq/ask_mail:
+    - text: "Mail Me.  hr@dolphinchat.ai"
+    - text: "You can Mail me at - hr@dolphinchat.ai"
+  
+  utter_faq/ask_address:
+    - text: "We Currently Operate from - 371P, Sector-42, Gurgaon, Haryana, India- 122002"
+    - text: "Visit us at -  371P, Sector-42, Gurgaon, Haryana, India- 122002  "
+
+  utter_faq/ask_who:
+    - text: "DolphinChat is a conversational AI platform for building rich conversational experiences to enable seamless communication between organizations and consumers."
+    - text: "DolphinChat helps organizations to scale efficiently by providing 24*7 support, automating repetitive consumer queries, converting boring forms to interactive experiences for lead generation. This helps organizations to improve customer service, increase team efficiency, enhance customer experience and personalize the communication with consumers. "
 
 actions:
   - action_submit
@@ -93,7 +125,7 @@ forms:
         entity: number
     mail:
       - type: from_entity
-        entity: number
+        entity: mail
 
 session_config:
   session_expiration_time: 60

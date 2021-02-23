@@ -17,6 +17,7 @@ nlu:
     - goodevening
     - good afternoon
 
+
 - intent: goodbye
   examples: |
     - good afternoon
@@ -39,6 +40,8 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - you are correct
+    - you are right
 
 - intent: deny
   examples: |
@@ -49,6 +52,8 @@ nlu:
     - don't like that
     - no way
     - not really
+    - you are wrong
+    - i disagree
 
 - intent: mood_great
   examples: |
@@ -86,11 +91,14 @@ nlu:
 
 - intent: tell_name
   examples: |
-    - what is your name?
-    - tell me your name
-    - what others call you
-    - what should i call you?
-
+    - I would like to fill form
+    - i would like to subscribe to you
+    - can i fill the form
+    - i would like to subscibe to your newslatter
+    - can you note my details
+    - can i fill the form here
+    - bot, note my details
+    - send me a mail
 
 - intent: bot_challenge
   examples: |
@@ -102,11 +110,22 @@ nlu:
 - intent: my_name
   examples: |
     - my name is [Kaus]{"entity":"name","value":"Kaus"}
-    - my name is [rahul]{"entity":"name","value":"rahul"}
-    - my name is [apneet]{"entity":"name","value":"apneet"}
+    - my name is [Kaus pathak]{"entity":"name","value":"Kaus pathak"}
+    - my name is [p.k. singh]{"entity":"name","value":"p.k. singh"}
+    - my name is [nishant singh tomar]{"entity":"name","value":"nishant singh tomar"}
     - [ashish]{"entity":"name","value":"ashish"} is my name
-    - [ashish]{"entity":"name","value":"ashish"} this side
+    - [ashish singh]{"entity":"name","value":"ashish singh"} this side
     - people call me [pathak]{"entity":"name","value":"pathak"}
+    - people call me [kaustubh pathak]{"entity":"name","value":"kaustubh pathak"}
+    - call me [kaustubh path]{"entity":"name","value":"kaustubh path"}
+    - you can call me [Kaus]{"entity":"name","value":"Kaus"}
+    - sure! my name is [Kaus]{"entity":"name","value":"Kaus"}
+    - Hii i am [Kaus]{"entity":"name","value":"Kaus"}
+    - Hii i am [kamal hassan]{"entity":"name","value":"kamal hassan"}
+    - Hii i am [supyadeepti singh]{"entity":"name","value":"supyadeepti singh"}
+    - [supyadeepti singh]{"entity":"name","value":"supyadeepti singh"}
+    - [kaus]{"entity":"name","value":"kaus"}
+    - [devashihs kumar singh]{"entity":"name","value":"devashihs kumar singh"}
 
 - intent: mobile_number
   examples: |
@@ -114,22 +133,73 @@ nlu:
     - [8209829808]{"entity":"number"}
     - [8209829808]{"entity":"number"} is my number
     - my nobile number is [8209829808]{"entity":"number"}
+    - call me on [0192345671]{"entity":"number"}
+
 
 - intent: e_mail
   examples: |
     - my mail is [kau.pathak@gmail.com]{"entity":"mail"}
     - [kau.pathak@gmail.com]{"entity":"mail"}
-    - [kau.pathak@gmail.com]{"entity":"mail"} is my number
+    - [kau.pathak@gmail.com]{"entity":"mail"} is my mail id
     - my mail is [kau.pathak@gmail.com]{"entity":"mail"}
+    - mail me on [dev.pathak@yahoo.com]{"entity":"mail"}
+    - my mail id id [de.pajthd1232@yandex.com]{"entity":"mail"}
+    - [isfs.mymail21@yahoo.in] is my mail
+    - my mail id is [imt_2017100@iiitm.ac.in]{"entity":"mail"}
 
 - intent: out_of_scope
   examples: |
     - I want to order food
     - What is 2 + 2?
     - Who's the US President?
+    - who's the prime minister of india?
+    - why is there so many wars in world?
+    - tell me name of person sitting near me?
+    - will she ever love me back ?
+    - Bot. Do you love me
 
-- intent: chitchat/ask_me
+- intent: faq/ask_me
   examples: |
-    - can i help me with something.
-    - what can i do for me.
+    - can you help me with something.
+    - what can you do for me.
     - can you do these many things.
+    - i want to ask something
+    - can i ask you something
+    - hey what do you do?
+
+- intent: faq/ask_weather
+  examples: |
+    - how is the weather today.
+    - what is climate outside today
+    - tell me about climate today
+    - what is sky looking like today
+
+- intent: faq/ask_number
+  examples: |
+    - Tell me your number
+    - whats your phone number
+    - Where can i call you
+    - do you have number?
+    - send me your number?
+
+- intent: faq/ask_mail
+  examples: |
+    - give me your mail id.
+    - Where can i mail you
+    - Send me your Email 
+    - Email Please
+    - where can i send mail to you
+    - whats your mail
+
+- intent: faq/ask_address
+  examples: |
+    - tell me your address 
+    - where are you situated
+    - where is your home
+    - What is the address of your place
+    - where can i reach you on globe
+
+- intent: faq/ask_who
+  examples: |
+    - tell me about your company
+    - describe your company
